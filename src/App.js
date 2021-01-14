@@ -1,52 +1,21 @@
-import AppFooter from "./componentes/appfooter"
-import AppCartas from "./componentes/appcartas"
 import { Fragment } from "react";
+import JumbotronAPP from "./componentes/jumbotron";
+import NavbarApp from "./componentes/navBar";
 
 
-function App() {
+
+const App = () => {
     return (
         <Fragment>
-            <div className="container">
-                <div className="row text-center">
-                        <div className="col-md-3">
-                            <AppCartas
-                                img={"http://placehold.it/500x325"}
-                                titulo={"Card title"}
-                                parrafo={"Some quick example text to build on the card title and make up the bulk of the card's content."}
-                                boton={"Go somewhere"}/>
-                            </div>
-                        <div className="col-md-3">
-                            <AppCartas
-                                img={"http://placehold.it/500x325"}
-                                titulo={"Card title"}
-                                parrafo={"Some quick example text to build on the card title and make up the bulk of the card's content."}
-                                boton={"Go somewhere"}/>
-                        </div>
-                        <div className="col-md-3">
-                            <AppCartas
-                                img={"http://placehold.it/500x325"}
-                                titulo={"Card title"}
-                                parrafo={"Some quick example text to build on the card title and make up the bulk of the card's content."}
-                                boton={"Go somewhere"}/>
-                        </div>
-                        <div className="col-md-3">
-                            <AppCartas
-                                img={"http://placehold.it/500x325"}
-                                titulo={"Card title"}
-                                parrafo={"Some quick example text to build on the card title and make up the bulk of the card's content."}
-                                boton={"Go somewhere"}/>
-                        </div>
-                    </div>
-                </div>
-            <AppFooter
-                firma={"Copyright &copy; Your Website 2020"}/>
+        <NavbarApp />
+        <JumbotronAPP
+            title={"A Warm Welcome"}
+            text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc leo, molestie in nulla a, semper dignissim turpis. Ut fringilla."}
+            button={"Call to action"}
+        />
         </Fragment>
-
     )
 }
 
 
-
-
 export default App;
-
