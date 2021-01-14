@@ -4,8 +4,6 @@ import NavbarApp from "./componentes/navBar";
 import AppCartas from "./componentes/appcartas";
 import AppFooter from "./componentes/appfooter";
 
-
-
 const App = () => {
     return (
         <Fragment>
@@ -52,6 +50,5 @@ const App = () => {
         </Fragment>
     )
 }
-
 
 export default App;
